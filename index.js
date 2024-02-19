@@ -29,7 +29,7 @@ const questions = [
     {
         type: 'checkbox',
         name: 'license',
-        message: 'What license are you using?',
+        message: 'What license are you using? (Select with the "Space" bar)',
         choices: [
             { name: 'MIT', value: ['MIT','![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)']},
             { name: 'ISC', value: ['ISC','![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)']},
