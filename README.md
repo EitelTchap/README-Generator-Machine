@@ -43,7 +43,7 @@ If you wish to contribute, please contact me on eiteltchapdeu@gmail.com
 
 ## Tests
 
-We will learn how to test next week!
+we will learn how to test next week!
 
 
 ---

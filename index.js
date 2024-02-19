@@ -1,8 +1,10 @@
+// Require all the necessary tools file system, inquirer and generateMarkdown function
+
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// array of questions for user
+// array of questions for user with messages
 const questions = [
     {
         type: 'input',
@@ -52,9 +54,9 @@ function writeToFile(fileName, data) {
     //Write the data to a specific file using the file system
     fs.writeFile(fileName, data, (err) => {
         if (err) {
-            console.error('An error occured writing file:', err)
+            console.error('An error occured writing file:', err); //Show message if an error occured.
         } else {
-            console.log('README file successfully created!');
+            console.log('README file successfully created!');   //Show message if the file is successfully created.
         }
     });
 }
@@ -63,16 +65,14 @@ function writeToFile(fileName, data) {
 const init = async () => {
     console.log('Welcome to README Generator, please answer the following questions:');
     try {
-        const answers = await inquirer.prompt(questions);
-        //Creates a variable for the badges
-        let licenseBadge;
+        const answers = await inquirer.prompt(questions); // Assign answers from prompt to the const answers
 
-        const README = generateMarkdown(answers);
+        const README = generateMarkdown(answers); //Use answers to populate the README file using generateMarkdown function.
 
-        writeToFile('README.md', README);
+        writeToFile('README.md', README); //Create the README file and save it to the same folder.
 
     } catch (err) {
-        console.log('Error occured', err);
+        console.log('Error occured', err); //Catch the error if it occurs.
     }
 };
 
