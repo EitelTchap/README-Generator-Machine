@@ -27,15 +27,15 @@ const questions = [
         message: 'What is the application used for?'
     },
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
-        message: 'What license are you using? (Select with the "Space" bar)',
+        message: 'What license are you using?',
         choices: [
             { name: 'MIT', value: ['MIT','![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)']},
             { name: 'ISC', value: ['ISC','![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)']},
             { name: 'Perl', value: ['Perl','![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)']},
             { name: 'MPL 2.0', value: ['MPL 2.0','![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)']},
-        ],
+        ]
     },
     {
         type: 'input',

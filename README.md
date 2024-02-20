@@ -1,6 +1,6 @@
 
   
-# README Generator Machine
+# A
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
@@ -8,7 +8,7 @@
 
 ## Description 
 
-This project is to create an application that generates a README file based on user's input.
+B
 
 
 ## Table of Contents
@@ -23,12 +23,12 @@ This project is to create an application that generates a README file based on u
 
 ## Installation
 
-Nodejs, npm (fs, inquirer, etc.).
+C
 
 
 ## Usage 
 
-The application generates a README file very quickly based on the user's input for any project.
+D
 
 
 ## License
@@ -38,12 +38,12 @@ The license used is: MIT
 
 ## Contributions
 
-If you wish to contribute, please contact me on eiteltchapdeu@gmail.com
+E
 
 
 ## Tests
 
-we will learn how to test next week!
+F
 
 
 ---
